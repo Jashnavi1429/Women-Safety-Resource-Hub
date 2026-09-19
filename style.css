@@ -1,0 +1,513 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf7ff;
+    color: #292333;
+}
+
+.header {
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 15px #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8e24aa;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #f7efff, #eadcff);
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.tag {
+    color: #8e24aa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 20px 0;
+    color: #281238;
+}
+
+.hero h1 span {
+    color: #8e24aa;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #62596b;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #8e24aa;
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    color: #8e24aa;
+    border: 2px solid #8e24aa;
+}
+
+.primary-btn:hover {
+    background: #6a1b9a;
+}
+
+.secondary-btn:hover {
+    background: #f0ddff;
+}
+
+.hero-card {
+    width: 350px;
+    padding: 40px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px #c9b4db;
+}
+
+.shield {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #f1dcff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.hero-card h2 {
+    color: #6a1b9a;
+}
+
+.hero-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.mini-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.mini-info div {
+    background: #f7efff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.mini-info b {
+    display: block;
+    color: #8e24aa;
+    font-size: 22px;
+}
+
+.mini-info small {
+    color: #666;
+}
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 35px;
+    color: #351442;
+}
+
+.section-text {
+    color: #777;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    width: 30%;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 5px 20px #e0d5e7;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 28px;
+}
+
+.purple {
+    background: #f0ddff;
+}
+
+.pink {
+    background: #ffe0ef;
+}
+
+.blue {
+    background: #dff3ff;
+}
+
+.feature-card h3 {
+    color: #6a1b9a;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-card a {
+    color: #8e24aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.emergency {
+    margin: 30px 8% 70px;
+    padding: 40px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #6a1b9a, #9c27b0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emergency span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.emergency h2 {
+    font-size: 30px;
+}
+
+.emergency p {
+    max-width: 600px;
+}
+
+.emergency-numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.emergency-numbers div {
+    background: white;
+    color: #6a1b9a;
+    padding: 20px 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.emergency-numbers b {
+    display: block;
+    font-size: 28px;
+}
+
+.emergency-numbers span {
+    font-size: 13px;
+}
+
+.page-banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0ddff, #faf7ff);
+}
+
+.page-banner h1 {
+    font-size: 50px;
+    color: #351442;
+    margin: 15px;
+}
+
+.page-banner p {
+    color: #666;
+    font-size: 18px;
+}
+
+.safety-section,
+.support-section {
+    width: 85%;
+    margin: 60px auto;
+}
+
+.safety-grid,
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.safety-card,
+.support-card {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #e1d6e8;
+    transition: 0.3s;
+}
+
+.safety-card:hover,
+.support-card:hover {
+    transform: translateY(-5px);
+}
+
+.large-icon {
+    font-size: 45px;
+}
+
+.safety-card h2,
+.support-card h2 {
+    color: #6a1b9a;
+}
+
+.safety-card li,
+.support-card li {
+    margin: 13px 0;
+    line-height: 1.5;
+}
+
+.tip-banner {
+    width: 85%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #f0ddff;
+    border-radius: 25px;
+}
+
+.tip-icon {
+    font-size: 45px;
+}
+
+.tip-banner h2 {
+    color: #6a1b9a;
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact-title h2 {
+    color: #6a1b9a;
+    font-size: 32px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 20px #e1d6e8;
+}
+
+.contact-icon {
+    font-size: 40px;
+}
+
+.contact-card strong {
+    font-size: 25px;
+    color: #6a1b9a;
+}
+
+.contact-card p {
+    color: #777;
+}
+
+.contact-card a {
+    margin-left: auto;
+    background: #8e24aa;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.support-message {
+    width: 70%;
+    margin: 70px auto;
+    padding: 45px;
+    text-align: center;
+    background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+    border-radius: 30px;
+}
+
+.message-icon {
+    font-size: 45px;
+}
+
+.support-message h2 {
+    color: #6a1b9a;
+}
+
+.support-message p {
+    color: #666;
+    line-height: 1.7;
+}
+
+footer {
+    background: #281238;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h3 {
+    color: #e0b5ff;
+}
+
+footer p {
+    color: #ddd;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 7%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: auto;
+    }
+
+    .emergency {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .emergency-numbers {
+        margin-top: 25px;
+    }
+
+    .safety-grid,
+    .support-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-message {
+        width: 80%;
+    }
+}
